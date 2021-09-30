@@ -12,9 +12,9 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"/>
     <link rel="stylesheet" href="./Assets/style.css" />
-    <script defer src="./Assets/script.js"></script>
+    
     <script src="https://cdn.jsdelivr.net/npm/luxon@2.0.2/build/global/luxon.min.js"></script>
-    <title>Weather Dashboard</title>
+    <title>Jupiter Weather</title>
     <link rel="apple-touch-icon" sizes="180x180" href="./Assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./Assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./Assets/favicon/favicon-16x16.png">
@@ -24,58 +24,65 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="./Assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-
+</head>
 <body>
     <div class="card">
         <div class="search">
           <input type="text" class="search_bar" placeholder="Enter your city">
           <button> <i class="fas fa-search" width="1.5em" height="1.5em"></i></button>
         </div>
+        <div class="history">
+            <button class="clear_history"> <i class="fas fa-window-close" width="1.5em" height="1.5em"></i></button>
+            <form id="search_history"></form>
+          </div>
   
       <div class="weather">
         <h4 class="current_day"></h4> <!--Should return day+date i.e: Friday 16th July-->
-        <h2 class="city">Jupiter</h2>
+        <h2 class="city">Great Red Spot</h2>
+        <h4 class="country">Jupiter</h4>
         <div class="flex">
-          <h1 class="curr_temperature">362°C</div>
+          <h1 class="curr_temperature">362°C</h1>
           <img src="" alt="" class="curr_icon">
-      </div>
+        </div>
         <div class="description">Cloudy</div>
         <div class="curr_humidity">Humidity: 2%</div>
-        <div class="curr_wind">Wind: 432 km/h</div>
+        <div class="curr_wind">Wind Speed: 432 km/h</div>
         <div class="UV">UV Index: 0</div>
       </div>
-      <div class="5Day">
-        <div class='forcecast'>
-          <h6 class=day1></h6>
+      <div class="5Day" id="5Day">
+        <div class='forecast'>
+          <h6 class=day></h6>
           <div class="temp"></div>  
           <img src="" alt="" class="icon">
           <div class="humidity"></div>
           <div class="wind"></div>
         </div>
-        <div class='forcecast'>
-            <h6 class=day2></h6>
+        <div class='forecast'>
+            <h6 class=day></h6>
             <div class="temp"></div>  
             <img src="" alt="" class="icon">
             <div class="humidity"></div>
             <div class="wind"></div>
         </div>
-        <div class='forcecast'>
-            <h6 class=day3></h6>
+        <div class='forecast'>
+            <h6 class=day></h6>
             <div class="temp"></div>  
             <img src="" alt="" class="icon">
             <div class="humidity"></div>
             <div class="wind"></div>
         </div>
-        <div class='forcecast'>
-            <h6 class=day4></h6>
+        <div class='forecast'>
+            <h6 class=day></h6>
             <div class="temp"></div>  
             <img src="" alt="" class="icon">
             <div class="humidity"></div>
             <div class="wind"></div>
         </div>
-
+        </div>
+      </div>
       </div>
     </div>
+    <script defer src="./Assets/script.js"></script>
 </body>
 
 </html>

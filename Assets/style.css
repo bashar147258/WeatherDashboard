@@ -5,7 +5,9 @@ body {
     height: 100vh;
     margin: 0;
     background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?cityscape'); 
+    background-image: url('https://source.unsplash.com/1920x1080/?space'); 
+    background-repeat: no-repeat;
+    background-position: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     
@@ -15,10 +17,12 @@ body {
     padding: 2em;
     background: #000000d0;
     color: white;
+    height: 80%;
     border-radius: 30px;
     width: 100%;
-    max-width: 420px;
-    margin: 1em;
+    max-width: 800px;
+    margin: 0.5em;
+    position: relative;
 }
 .search {
     display: flex;
@@ -45,6 +49,12 @@ input.search_bar {
     color: white;
     background: grey;
     font-size: 120%
+}
+
+.weather{
+    clear: both;
+    top: -40px;
+    position: relative
 }
 
 button {
@@ -77,4 +87,45 @@ h1.temp {
     align-items: center;
 }
 
-.inactive
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline;
+}
+
+
+#history {
+    width: auto;
+    float: right;
+    align-items: right;
+    margin: 3px;
+}
+.clear_history{
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    display: block;
+    float: right;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+.forecast{
+    display: inline list-item;
+    float: left;
+    justify-content: right;
+    margin 1em;
+    list-style: none;
+    padding: 2em;
+    margin-bottom: 2px;
+    position: relative;
+    
+}
