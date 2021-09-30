@@ -4,7 +4,8 @@
 https://bashar147258.github.io/WeatherDashboard/
 # Demonstation
 ![Syndey](./Assets/Sample/Syndey.png)
-![Madrid[(./Assets/Sample/Madrid.png)
+![Madrid](./Assets/Sample/Madrid.png)
+![Athens](./Assets/Sample/Athens.png)
 # Additional Features
 * The back ground will change to the city selected
 * When a city is selected, the current weather information aswell as the 5 day information will be posted
