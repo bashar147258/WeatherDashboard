@@ -3,7 +3,6 @@
 # Deployed Link
 https://bashar147258.github.io/WeatherDashboard/
 # Demonstation
-![Syndey](./Assets/Sample/Syndey.png)
 ![Madrid](./Assets/Sample/Madrid.png)
 ![Athens](./Assets/Sample/Athens.png)
 # Additional Features
